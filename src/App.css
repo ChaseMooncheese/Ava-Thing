@@ -1,10 +1,24 @@
 .App {
   text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Lists {
+  min-height:50vh;
+  max-height: none;
+  height:auto;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.Averages {
+  top: 0.3vh;
+  position: relative;
 }
 
 @media (prefers-reduced-motion: no-preference) {
