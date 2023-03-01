@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Ava-Thing/static/css/main.5c4d7f66.css",
+    "main.js": "/Ava-Thing/static/js/main.676cb43e.js",
+    "static/js/787.7ec6db9f.chunk.js": "/Ava-Thing/static/js/787.7ec6db9f.chunk.js",
+    "static/media/logo.svg": "/Ava-Thing/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Ava-Thing/index.html",
+    "main.5c4d7f66.css.map": "/Ava-Thing/static/css/main.5c4d7f66.css.map",
+    "main.676cb43e.js.map": "/Ava-Thing/static/js/main.676cb43e.js.map",
+    "787.7ec6db9f.chunk.js.map": "/Ava-Thing/static/js/787.7ec6db9f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c4d7f66.css",
+    "static/js/main.676cb43e.js"
+  ]
+}
