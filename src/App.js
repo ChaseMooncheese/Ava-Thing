@@ -5,7 +5,11 @@ import Container from './Container';
 import Scores from './Scores';
 
 function parseInput(str){
-  const myReg = new RegExp("[0-9]\. ");
+  //remove newlines
+  str = str.replace(/\r?\n|\r/g, "");
+
+  //remove numbers
+  const myReg = new RegExp("[0-9]+\. ");
   const array = str.split(myReg);
   array.shift();
   const newArray = array.map(item => { return item.trim() });

@@ -12,7 +12,7 @@ function turnIntoString(list){
 function Item(props){
     return (
         <div>
-            <h3>{props.itemText}</h3>
+            <p>{props.itemText}</p>
         </div>
     );
     
@@ -24,9 +24,9 @@ export default function Container(props){
         return turnIntoString(list);
     })
 
-    const items = strings.map(item => {
+    const items = strings.map((item, index) => {
         return (
-            <Item itemText={item}></Item>
+            <Item itemText={item} key={index}></Item>
         )
     })
 

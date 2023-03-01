@@ -5,6 +5,7 @@ export default function Scores(props){
     const numIterationsForItem = {};
     lists.forEach(list => {
         list.forEach((item, index) => {
+            item = item.toLowerCase();
             if (item in totalPoints)
             {
                 totalPoints[item] += index + 1;
@@ -32,8 +33,12 @@ export default function Scores(props){
     arrOfKeys.sort((a, b) => {return averages[a] - averages[b]});
 
     const divs = arrOfKeys.map(key => {
+        const fKey = key.split(' ')
+        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+        .join(' ');
+
         return (
-            <h3>{key + ': ' + averages[key]}</h3>
+            <h3 key={key}>{fKey + ': ' + averages[key]}</h3>
         )
     })
 
